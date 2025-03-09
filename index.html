@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Gestion des Élèves</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <h1>Ma Liste d'Élèves</h1>
+    <div class="container">
+        <div class="champs">
+            <input type="text" id="nameInput" placeholder="Nom de l'élève">
+            <input type="text" id="surnameInput" placeholder="Prénom de l'élève">
+            <select id="genderInput">
+                <option value="">Sélectionner le sexe</option>
+                <option value="M">Masculin</option>
+                <option value="F">Féminin</option>
+            </select>
+            <input type="text" id="courseInput" placeholder="Parcours">
+            <input type="text" id="matriculeInput" placeholder="Numéro de matricule">
+            <input type="date" id="dateInput">
+            <button onclick="addStudent()"><ion-icon name="add-circle-outline"></ion-icon> Ajouter Élève</button>
+        </div>
+        <ul id="studentList"></ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
